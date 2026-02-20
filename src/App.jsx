@@ -8,6 +8,7 @@ import UseContext from "./questions/UseContext";
 import { useState } from "react";
 import UseContext2 from "./questions/UseContext2";
 import { userContext } from "./questions/CreateContext";
+import UseRef from "./questions/UseRef";
 
 function App() {
   const [theme, setTheme] = useState(true);
@@ -26,9 +27,11 @@ function App() {
         <UseContext />
       </themeContext.Provider> */}
 
-      <UserContext>
+      {/* <UserContext>
         <UseContext2 />
-      </UserContext>
+      </UserContext> */}
+
+      <UseRef/>
       </div>
     </>
   );
