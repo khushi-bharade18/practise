@@ -9,29 +9,32 @@ import { useState } from "react";
 import UseContext2 from "./questions/UseContext2";
 import { userContext } from "./questions/CreateContext";
 import UseRef from "./questions/UseRef";
+import UseRef2 from "./questions/UseRef2";
 
 function App() {
   const [theme, setTheme] = useState(true);
 
   return (
     <>
-      <div 
-      className={`${theme ? "bg-gray-100" : "bg-gray-900"} min-h-screen transition-colors duration-500`}> 
-      {/* <UseState/> */}
-      {/* <UseState2 /> */}
-      {/* <Cart/> */}
-      {/* <UseEffect/> */}
-      {/* <UseEffect2/> */}
+      <div
+        className={`${theme ? "bg-gray-100" : "bg-gray-900"} min-h-screen transition-colors duration-500`}
+      >
+        {/* <UseState/> */}
+        {/* <UseState2 /> */}
+        {/* <Cart/> */}
+        {/* <UseEffect/> */}
+        {/* <UseEffect2/> */}
 
-      {/* <themeContext.Provider value={{ theme, setTheme }}>
+        {/* <themeContext.Provider value={{ theme, setTheme }}>
         <UseContext />
       </themeContext.Provider> */}
 
-      {/* <UserContext>
+        {/* <UserContext>
         <UseContext2 />
       </UserContext> */}
 
-      <UseRef/>
+        {/* <UseRef/> */}
+        <UseRef2 />
       </div>
     </>
   );
