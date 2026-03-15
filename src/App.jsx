@@ -10,6 +10,9 @@ import UseContext2 from "./questions/UseContext2";
 import { userContext } from "./questions/CreateContext";
 import UseRef from "./questions/UseRef";
 import UseRef2 from "./questions/UseRef2";
+import UseReducer from "./questions/UseReducer";
+import Task from "./component/Task";
+import UseReducer2 from "./questions/UseReducer2";
 
 function App() {
   const [theme, setTheme] = useState(true);
@@ -34,7 +37,11 @@ function App() {
       </UserContext> */}
 
         {/* <UseRef/> */}
-        <UseRef2 />
+        {/* <UseRef2 /> */}
+
+        {/* <UseReducer /> */}
+        {/* <Task/> */}
+        <UseReducer2 />
       </div>
     </>
   );
