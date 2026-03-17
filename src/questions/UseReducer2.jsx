@@ -12,6 +12,10 @@ export default function UseReducer2() {
         return [...todo, action.payload];
       case "Delete":
         return todo.filter((item) => item.id !== action.payload);
+      case "CheckTask":
+        return todo.map((item) =>
+          item.id === action.payload ? { ...item, status: !item.status } : item,
+        );
     }
   }
   return (

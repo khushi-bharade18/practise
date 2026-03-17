@@ -13,10 +13,14 @@ export default function ReducerTable({ todos, dispatch }) {
                     <input
                       type="checkbox"
                       name="checkbox"
-                      className="w-5 h-5 accent-blue-500 cursor-pointer"
+                      className="w-5 h-5 accent-blue-500 cursor-pointer line-through"
+                      checked={todo.status}
+                      onChange={() =>
+                        dispatch({ type: "CheckTask", payload: todo.id })
+                      }
                     />
                   </td>
-                  <td className="py-3 text-gray-700 font-medium">
+                  <td className={todo.status ? "py-3 text-gray-700 font-medium line-through" : "py-3 text-gray-700 font-medium"}>
                     {todo.message}
                   </td>
                   <td className="py-3 text-right">
