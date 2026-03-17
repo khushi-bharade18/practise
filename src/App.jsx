@@ -11,7 +11,6 @@ import { userContext } from "./questions/CreateContext";
 import UseRef from "./questions/UseRef";
 import UseRef2 from "./questions/UseRef2";
 import UseReducer from "./questions/UseReducer";
-import Task from "./component/Task";
 import UseReducer2 from "./questions/UseReducer2";
 
 function App() {
