@@ -12,6 +12,7 @@ import UseRef from "./questions/UseRef";
 import UseRef2 from "./questions/UseRef2";
 import UseReducer from "./questions/UseReducer";
 import UseReducer2 from "./questions/UseReducer2";
+import UseReducer3 from "./questions/UseReducer3";
 
 function App() {
   const [theme, setTheme] = useState(true);
@@ -40,7 +41,8 @@ function App() {
 
         {/* <UseReducer /> */}
         {/* <Task/> */}
-        <UseReducer2 />
+        {/* <UseReducer2 /> */}
+        <UseReducer3 />
       </div>
     </>
   );
